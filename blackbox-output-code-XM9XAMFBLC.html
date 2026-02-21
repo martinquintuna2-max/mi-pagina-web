@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Plus - Productos por Categoría y Precio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🛒 Supermercado Plus</h1>
+            <p>Encuentra tus productos por categoría y presupuesto</p>
+        </div>
+    </header>
+
+    <nav class="filters">
+        <div class="container">
+            <div class="filter-group">
+                <label for="filter-function">📦 Categoría (Función):</label>
+                <select id="filter-function">
+                    <option value="all">Todas las categorías</option>
+                    <option value="alimentos">Alimentos</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="limpieza">Limpieza del Hogar</option>
+                    <option value="higiene">Higiene Personal</option>
+                    <option value="congelados">Congelados</option>
+                    <option value="panaderia">Panadería</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="filter-value">💰 Rango de Precio:</label>
+                <select id="filter-value">
+                    <option value="all">Todos los precios</option>
+                    <option value="economico">Económico (menos de $5)</option>
+                    <option value="medio">Medio ($5 - $15)</option>
+                    <option value="premium">Premium (más de $15)</option>
+                </select>
+            </div>
+
+            <button id="reset-filters" class="btn-reset">🔄 Restablecer Filtros</button>
+        </div>
+    </nav>
+
+    <main class="products-section">
+        <div class="container">
+            <div class="results-info">
+                <span id="product-count">Mostrando todos los productos</span>
+            </div>
+            
+            <div id="products-grid" class="products-grid">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Supermercado Plus - Tu supermercado de confianza</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
